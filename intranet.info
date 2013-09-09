@@ -36,6 +36,7 @@ dependencies[] = update
 dependencies[] = user
 
 ;; Contrib modules
+dependencies[] = libraries
 dependencies[] = calendar
 dependencies[] = colorbox
 dependencies[] = ctools
@@ -57,7 +58,6 @@ dependencies[] = interwiki
 dependencies[] = jcarousel
 dependencies[] = l10n_client
 dependencies[] = l10n_update
-dependencies[] = libraries
 dependencies[] = makemeeting
 dependencies[] = markdown
 dependencies[] = mediawiki_users
