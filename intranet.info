@@ -70,7 +70,7 @@ dependencies[] = panels
 dependencies[] = quicktabs
 dependencies[] = simplewiki
 dependencies[] = skype_status
-dependencies[] = social-share
+;dependencies[] = social-share
 dependencies[] = stage_file_proxy
 dependencies[] = sugarcrm_connector
 dependencies[] = superfish
@@ -82,15 +82,3 @@ dependencies[] = views_jqfx
 dependencies[] = views_jqfx_cycle
 dependencies[] = wikitools
 dependencies[] = wysiwyg
-
-;; Libraries
-dependencies[] = colorbox
-dependencies[] = fancybox
-dependencies[] = geshi
-dependencies[] = google-api-php-client
-dependencies[] = jquery.cycle
-dependencies[] = nivo-slider
-dependencies[] = superfish
-dependencies[] = tinymce
-
-
