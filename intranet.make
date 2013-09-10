@@ -10,6 +10,44 @@ projects[intranet-theme][download][branch] = "master"
 projects[intranet-theme][download][tag] = ""
 projects[intranet-theme][download][url] = "git://github.com/romanbellcom/intranet-theme.git"
 
+; Libraries
+
+libraries[colorbox][download][type] = "get"
+libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/master.zip"
+libraries[colorbox][directory_name] = "colorbox"
+
+libraries[fancybox][download][type] = "get"
+libraries[fancybox][download][url] = "http://fancybox.googlecode.com/files/jquery.fancybox-1.3.4.zip"
+libraries[fancybox][directory_name] = "fancybox"
+
+libraries[geshi][download][type] = "get"
+libraries[geshi][download][url] = "http://freefr.dl.sourceforge.net/project/geshi/geshi/GeSHi%201.0.8.11/GeSHi-1.0.8.11.tar.gz"
+libraries[geshi][download][directory_name] = "geshi"
+
+libraries[google-api-php-client][download][type] = "get"
+libraries[google-api-php-client][download][url] = "https://google-api-php-client.googlecode.com/files/google-api-php-client-0.6.6.tar.gz"
+libraries[google-api-php-client][directory_name] = "google-api-php-client"
+
+libraries[jquery.cycle][download][type] = "get"
+libraries[jquery.cycle][download][url] = "http://malsup.github.io/jquery.cycle.all.js"
+libraries[jquery.cycle][directory_name] = "jquery.cycle"
+
+libraries[nivo-slider][download][type] = "get"
+libraries[nivo-slider][download][url] = "http://dev7studios.com/wp-content/uploads/downloads/2013/01/nivo-slider3.2.zip"
+libraries[nivo-slider][directory_name] = "nivo-slider"
+
+libraries[superfish][download][type] = "get"
+libraries[superfish][download][url] = "https://github.com/joeldbirch/superfish/archive/master.zip"
+libraries[superfish][directory_name] = "superfish"
+
+libraries[tinymce][download][type] = "get"
+libraries[tinymce][download][url] = "http://download.moxiecode.com/tinymce/tinymce_4.0.5.zip"
+libraries[tinymce][directory_name] = "tinymce"
+
+libraries[markitup][download][type] = "get"
+libraries[markitup][download][url] = "http://markitup.jaysalvat.com//downloads/download.php?id=releases/latest"
+libraries[markitup][directory_name] = "latest"
+
 ; Contrib modules
 
 projects[calendar][subdir] = "contrib"
@@ -140,37 +178,3 @@ projects[wikitools][version] = "1.0-alpha1"
 
 projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.2"
-
-; Libraries
-
-libraries[colorbox][download][type] = "get"
-libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/master.zip"
-libraries[colorbox][directory_name] = "colorbox"
-
-libraries[fancybox][download][type] = "get"
-libraries[fancybox][download][url] = "http://fancybox.googlecode.com/files/jquery.fancybox-1.3.4.zip"
-libraries[fancybox][directory_name] = "fancybox"
-
-libraries[google-api-php-client][download][type] = "get"
-libraries[google-api-php-client][download][url] = "https://google-api-php-client.googlecode.com/files/google-api-php-client-0.6.6.tar.gz"
-libraries[google-api-php-client][directory_name] = "google-api-php-client"
-
-libraries[jquery.cycle][download][type] = "get"
-libraries[jquery.cycle][download][url] = "http://malsup.github.io/jquery.cycle.all.js"
-libraries[jquery.cycle][directory_name] = "jquery.cycle"
-
-libraries[nivo-slider][download][type] = "get"
-libraries[nivo-slider][download][url] = "http://dev7studios.com/wp-content/uploads/downloads/2013/01/nivo-slider3.2.zip"
-libraries[nivo-slider][directory_name] = "nivo-slider"
-
-libraries[superfish][download][type] = "get"
-libraries[superfish][download][url] = "https://github.com/joeldbirch/superfish/archive/master.zip"
-libraries[superfish][directory_name] = "superfish"
-
-libraries[tinymce][download][type] = "get"
-libraries[tinymce][download][url] = "http://download.moxiecode.com/tinymce/tinymce_4.0.5.zip"
-libraries[tinymce][directory_name] = "tinymce"
-
-libraries[markitup][download][type] = "get"
-libraries[markitup][download][url] = "http://markitup.jaysalvat.com//downloads/download.php?id=releases/latest"
-libraries[markitup][directory_name] = "latest"
