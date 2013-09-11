@@ -77,6 +77,9 @@ projects[eva][version] = "1.2"
 projects[faq][subdir] = "contrib"
 projects[faq][version] = "1.0-rc2"
 
+projects[features][subdir] = "contrib"
+projects[features][version] = "2.0-rc3"
+
 projects[follow][subdir] = "contrib"
 projects[follow][version] = "1.0-alpha1"
 
