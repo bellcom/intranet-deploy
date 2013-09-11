@@ -86,6 +86,7 @@ function intranet_install() {
   // Set admin theme to seven.
   variable_set('admin_theme', 'seven');
 
+  module_enable(array('social_share'));
   module_disable(array('update'));
   // Set default TZ.
   variable_set('date_default_timezone', "Europe/Berlin");
