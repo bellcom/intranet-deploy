@@ -34,8 +34,9 @@ libraries[jquery.cycle][download][url] = "http://malsup.github.io/jquery.cycle.a
 libraries[nivo-slider][download][type] = "get"
 libraries[nivo-slider][download][url] = "http://dev7studios.com/wp-content/uploads/downloads/2013/01/nivo-slider3.2.zip"
 
-libraries[superfish][download][type] = "get"
-libraries[superfish][download][url] = "https://github.com/joeldbirch/superfish/archive/master.zip"
+libraries[superfish][download][type] = "git"
+libraries[superfish][download][url] = "https://github.com/mehrpadin/Superfish-for-Drupal.git"
+libraries[superfish][download][branch] = "master"
 
 libraries[tinymce][download][type] = "get"
 libraries[tinymce][download][url] = "http://download.moxiecode.com/tinymce/tinymce_4.0.5.zip"
