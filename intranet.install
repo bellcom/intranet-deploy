@@ -78,11 +78,11 @@ function intranet_install() {
   user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content'));
   user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content'));
 
-  theme_enable(array('Intranet'));
-  theme_disable(array('bartik', 'rubik'));
+  theme_enable(array('theme588', 'bartik', 'seven'));
+  theme_disable(array('rubik'));
 
   // Set default theme to Intranet.
-  variable_set('theme_default', 'Intranet');
+  variable_set('theme_default', 'theme588');
   // Set admin theme to seven.
   variable_set('admin_theme', 'seven');
 
