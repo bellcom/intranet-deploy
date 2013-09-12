@@ -77,8 +77,6 @@ dependencies[] = sugarcrm_connector
 dependencies[] = superfish
 dependencies[] = time_registration
 dependencies[] = twitter_profile_widget
-dependencies[] = uuid
-dependencies[] = uuid_features
 dependencies[] = views
 dependencies[] = views_bulk_operations
 dependencies[] = views_jqfx
@@ -87,7 +85,6 @@ dependencies[] = wikitools
 dependencies[] = wysiwyg
 
 ;; Features
-dependencies[] = intranet_content
 dependencies[] = intranet_field_base
 dependencies[] = intranet_field_instance
 dependencies[] = intranet_filter
