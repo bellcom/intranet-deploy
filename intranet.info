@@ -83,3 +83,22 @@ dependencies[] = views_jqfx
 dependencies[] = views_jqfx_cycle
 dependencies[] = wikitools
 dependencies[] = wysiwyg
+
+;; Features
+dependencies[] = intranet_field_base
+dependencies[] = intranet_field_instance
+dependencies[] = intranet_filter
+dependencies[] = intranet_image
+dependencies[] = intranet_language
+dependencies[] = intranet_custom_menu
+dependencies[] = intranet_menu_links
+dependencies[] = intranet_node
+dependencies[] = intranet_og_features_permission
+dependencies[] = intranet_page_manger_pages
+dependencies[] = intranet_panels_layout
+dependencies[] = intranet_quicktabs
+dependencies[] = intranet_taxonomy
+dependencies[] = intranet_user_permission
+dependencies[] = intranet_user_role
+dependencies[] = intranet_views_view
+dependencies[] = intranet_wysiwyg
