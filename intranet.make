@@ -162,12 +162,6 @@ projects[superfish][version] = "1.8"
 projects[twitter_profile_widget][subdir] = "contrib"
 projects[twitter_profile_widget][version] = "1.6"
 
-projects[uuid][subdir] = "contrib"
-projects[uuid][version] = "1.0-alpha5"
-
-projects[node_export][subdir] = "contrib"
-projects[node_export][version] = "3.0"
-
 projects[views][subdir] = "contrib"
 projects[views][version] = "3.5"
 
