@@ -49,7 +49,7 @@ dependencies[] = entityreference_prepopulate
 dependencies[] = eva
 dependencies[] = faq
 dependencies[] = features
-dependencies[] = features_extra
+;dependencies[] = features_extra
 dependencies[] = follow
 dependencies[] = galleryformatter
 dependencies[] = gauth
@@ -86,7 +86,6 @@ dependencies[] = wikitools
 dependencies[] = wysiwyg
 
 ;; Features
-dependencies[] = intranet_fe_block_settings
 dependencies[] = intranet_field_base
 dependencies[] = intranet_field_instance
 dependencies[] = intranet_filter
@@ -104,3 +103,4 @@ dependencies[] = intranet_user_permission
 dependencies[] = intranet_user_role
 dependencies[] = intranet_views_view
 dependencies[] = intranet_wysiwyg
+dependencies[] = intranet_fe_block_settings

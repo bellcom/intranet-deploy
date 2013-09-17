@@ -87,6 +87,9 @@ function intranet_install() {
   variable_set('admin_theme', 'seven');
 
   module_disable(array('update'));
+  module_enable(array('fe'));
+
+  features_revert(array('intranet_fe_block_settings' => array('fe_block_settings')));
   // Set default TZ.
   variable_set('date_default_timezone', "Europe/Berlin");
   variable_set('date_first_day', "1");
