@@ -7,13 +7,13 @@ core = 7.x
 projects[intranet][type] = "module"
 projects[intranet][download][type] = "git"
 projects[intranet][download][branch] = "master"
-projects[intranet][download][url] = "git://github.com/romanbellcom/intranet.git"
+projects[intranet][download][url] = "git://github.com/bellcom/intranet.git"
 
 ; Intranet themes
 projects[intranet-theme][type] = "theme"
 projects[intranet-theme][download][type] = "git"
 projects[intranet-theme][download][branch] = "master"
-projects[intranet-theme][download][url] = "git://github.com/romanbellcom/intranet-theme.git"
+projects[intranet-theme][download][url] = "git://github.com/bellcom/intranet-theme.git"
 
 ; Libraries
 libraries[colorbox][download][type] = "get"
