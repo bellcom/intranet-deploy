@@ -104,3 +104,4 @@ dependencies[] = intranet_user_role
 dependencies[] = intranet_views_view
 dependencies[] = intranet_wysiwyg
 dependencies[] = intranet_fe_block_settings
+dependencies[] = intranet_fe_block_boxes
