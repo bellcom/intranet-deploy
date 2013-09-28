@@ -79,6 +79,7 @@ dependencies[] = superfish
 dependencies[] = time_registration
 dependencies[] = twitter_profile_widget
 dependencies[] = views
+dependencies[] = views_ui
 dependencies[] = views_bulk_operations
 dependencies[] = views_jqfx
 dependencies[] = views_jqfx_cycle
