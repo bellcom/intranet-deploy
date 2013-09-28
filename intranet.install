@@ -83,13 +83,21 @@ function intranet_install() {
 
   // Set default theme to Intranet.
   variable_set('theme_default', 'theme588');
+
   // Set admin theme to seven.
   variable_set('admin_theme', 'seven');
 
+  // Use admin theme when editing or creating content.
+  variable_set('node_admin_theme', 1);
+
   module_disable(array('update'));
+
+  // Enable features extra programmatically.
   module_enable(array('fe'));
 
+  // Revert block settings featre after install.
   features_revert(array('intranet_fe_block_settings' => array('fe_block_settings')));
+  
   // Set default TZ.
   variable_set('date_default_timezone', "Europe/Berlin");
   variable_set('date_first_day', "1");
