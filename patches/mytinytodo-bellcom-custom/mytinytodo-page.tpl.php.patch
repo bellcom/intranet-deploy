@@ -1,0 +1,120 @@
+diff --git a/tpl/mytinytodo-page.tpl.php b/tpl/mytinytodo-page.tpl.php
+index debe1b3..572b041 100644
+--- a/tpl/mytinytodo-page.tpl.php
++++ b/tpl/mytinytodo-page.tpl.php
+@@ -60,7 +60,6 @@
+ 		//mytinytodo_page_add_css($path . 'lib/themes/default/print.css', array('group' => CSS_DEFAULT));
+ 	}
+ 
+-
+ 	mytinytodo_page_add_library('system','jquery');
+ 	mytinytodo_page_add_library('system','jquery.once');
+ 	mytinytodo_page_add_js($base_path  . 'misc/ui/jquery.ui.core.min.js');
+@@ -115,13 +114,24 @@
+ 
+ <div id="page_tasks" style="display:none">
+ 
+-<div id="lists">
+- <ul class="mtt-tabs"></ul>
+- <div class="mtt-tabs-add-button" title="<?php _e('list_new'); ?>"><span></span></div>
++    
++ <div id="lists">
++     <ul id="lists_li" class="mtt-tabs">
++     </ul>
++     <div class="mtt-tabs-add-button" title="<?php _e('list_new'); ?>">
++         <span id="add_lbl">
++             <?php _e('list_new_add'); ?>
++             <span id="add_img"></span>
++         </span>
++     </div>
+  <div id="tabs_buttons">
+   <div class="mtt-tabs-select-button mtt-tabs-button" title="<?php _e('list_select'); ?>"><span></span></div>
+  </div>
+- <div id="list_all" class="mtt-tab mtt-tabs-alltasks mtt-tabs-hidden"><a href="#alltasks"><span><?php _e('alltasks'); ?></span><div class="list-action"></div></a></div>
++ <div id="list_all" class="mtt-tab mtt-tabs-alltasks">
++     <a href="#alltasks">
++         <span><?php _e('alltasks'); ?></span>
++         <div class="list-action"></div></a>        
++ </div>
+ </div>
+ 
+ 
+@@ -166,6 +176,7 @@
+ <span class="mtt-notes-showhide"><?php _e('notes');?> <a href="#" id="mtt-notes-show"><?php _e('notes_show');?></a> / <a href="#" id="mtt-notes-hide"><?php _e('notes_hide');?></a></span>
+ <span id="mtt_filters"></span>
+ <span id="tagcloudbtn" class="mtt-menu-button"><?php _e('tagcloud');?> <span class="arrdown2"></span></span>
++<span id="tagcloudbtn" class="mtt-menu-button"><?php _e('tagcloud');?> <span class="arrdown2"></span></span>
+ </h3>
+ 
+ <div id="taskcontainer">
+@@ -174,7 +185,6 @@
+ 
+ </div> <!-- end of page_tasks -->
+ 
+-
+ <div id="page_taskedit" style="display:none">
+ 
+ <div><a href="#" class="mtt-back-button"><?php _e('go_back');?></a></div>
+@@ -187,26 +197,34 @@
+ </h3>
+ 
+ <form id="taskedit_form" name="edittask" method="post">
+-<input type="hidden" name="isadd" value="0" />
+-<input type="hidden" name="id" value="" />
+-<div class="form-row form-row-short">
+- <span class="h"><?php _e('priority');?></span>
+- <select name="prio">
+-  <option value="2">+2</option><option value="1">+1</option><option value="0" selected="selected">&plusmn;0</option><option value="-1">&minus;1</option>
+- </select>
+-</div>
+-<div class="form-row form-row-short">
+- <span class="h"><?php _e('due');?> </span>
+- <input name="duedate" id="duedate" value="" class="in100" title="Y-M-D, M/D/Y, D.M.Y, M/D, D.M" autocomplete="off" />
+-</div>
+-<div class="form-row-short-end"></div>
+-<div class="form-row"><div class="h"><?php _e('task');?></div> <input type="text" name="task" value="" class="in500" maxlength="250" /></div>
+-<?php echo theme('mytinytodo_edit_note') ?>
+-<?php echo theme('mytinytodo_edit_tags') ?>
+-<div class="form-row form-bottom-buttons">
+- <input type="submit" value="<?php _e('save');?>" /> 
+- <input type="button" id="mtt_edit_cancel" class="mtt-back-button" value="<?php _e('cancel');?>" />
+-</div>
++    <input type="hidden" name="isadd" value="0" />
++    <input type="hidden" name="id" value="" />
++    <div class="form-row form-row-short">
++        <span class="h"><?php _e('priority');?></span>
++        <select name="prio">
++            <option value="2">+2</option>
++            <option value="1">+1</option>
++            <option value="0" selected="selected">&plusmn;0</option>
++            <option value="-1">&minus;1</option>
++        </select>
++    </div>
++    <div class="form-row form-row-short">
++        <span class="h"><?php _e('due');?> </span>
++        <input name="duedate" id="duedate" value="" class="in100" title="Y-M-D, M/D/Y, D.M.Y, M/D, D.M" autocomplete="off" />
++    </div>
++    <div class="form-row-short-end"></div>
++    <div class="form-row">
++        <div class="h"><?php _e('task');?></div> 
++        <input type="text" name="task" value="" class="in500" maxlength="250" />
++    </div>
++    
++    <?php echo theme('mytinytodo_edit_note') ?>
++    <?php echo theme('mytinytodo_edit_tags') ?>
++    
++    <div class="form-row form-bottom-buttons">
++        <input type="submit" value="<?php _e('save');?>" /> 
++        <input type="button" id="mtt_edit_cancel" class="mtt-back-button" value="<?php _e('cancel');?>" />
++    </div>
+ </form>
+ 
+ </div>  <!-- end of page_taskedit -->
+@@ -266,6 +284,7 @@
+ <ul>
+  <li id="cmenu_edit"><b><?php _e('action_edit');?></b></li>
+  <li id="cmenu_note"><?php _e('action_note');?></li>
++ <li id="cmenu_subtask"><?php _e('action_subtask');?></li>
+  <li id="cmenu_prio" class="mtt-menu-indicator" submenu="cmenupriocontainer"><div class="submenu-icon"></div><?php _e('action_priority');?></li>
+  <li id="cmenu_move" class="mtt-menu-indicator" submenu="cmenulistscontainer"><div class="submenu-icon"></div><?php _e('action_move');?></li>
+  <li id="cmenu_delete"><?php _e('action_delete');?></li>

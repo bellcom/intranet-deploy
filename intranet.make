@@ -131,6 +131,8 @@ projects[menu_block][version] = "2.3"
 
 projects[mytinytodo][subdir] = "contrib"
 projects[mytinytodo][version] = "1.0"
+projects[mytinytodo][patch][] = "patches/mytinytodo-bellcom-custom/mytinytodo.info.patch"
+projects[mytinytodo][patch][] = "patches/mytinytodo-bellcom-custom/mytinytodo-page.tpl.php.patch"
 
 projects[og][subdir] = "contrib"
 projects[og][version] = "2.0-rc1"
